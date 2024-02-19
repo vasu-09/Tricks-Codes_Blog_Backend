@@ -36,7 +36,7 @@ import java.awt.image.BufferedImage;
 @RestController
 public class ImageUploadController {
 
-    private static final String UPLOAD_DIRECTORY = System.getProperty("user.dir") + "/src/main/webapps/images/";
+    private static final String UPLOAD_DIRECTORY = System.getProperty("user.dir") + "/src/main/resources/images/";
     
     @GetMapping("/uploads/{filename:.+}")
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
