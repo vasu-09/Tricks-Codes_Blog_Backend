@@ -3,7 +3,6 @@ package com.tandc.blog.security;
 import java.security.Key;
 import java.util.Date;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
@@ -17,8 +16,7 @@ public class JwtTokenProvider {
 	
 private String jwtSecret = "f93c9b55c8d00c302bc7aee3c87b707cb96b0465d64ac3bc85955d4396e1e3de";
 	
-	@Value("${app.jwt-expiration-milliseconds}")
-	private Long jwtExpirationDate;
+	private Long jwtExpirationDate = (long) 604800000;
 	
 	// Generate JWT token
 	public String generateToke(Authentication authentication) {
