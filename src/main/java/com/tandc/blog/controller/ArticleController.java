@@ -23,7 +23,7 @@ import com.tandc.blog.dto.Articledto;
 import com.tandc.blog.service.ArticleService;
 
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("article")
 public class ArticleController {

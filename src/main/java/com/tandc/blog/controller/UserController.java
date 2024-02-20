@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.tandc.blog.dto.UserDto;
 import com.tandc.blog.service.UserService;
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @Controller
 @RequestMapping("user")
 public class UserController {

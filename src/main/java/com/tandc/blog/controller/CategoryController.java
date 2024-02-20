@@ -19,7 +19,7 @@ import com.tandc.blog.entity.Category;
 import com.tandc.blog.service.CategorySevice;
 
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("category")
 public class CategoryController {

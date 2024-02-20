@@ -14,7 +14,7 @@ import com.tandc.blog.dto.LoginDto;
 import com.tandc.blog.dto.RegisterDto;
 import com.tandc.blog.service.AuthService;
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @Controller
 @RequestMapping("auth")
 public class AuthController {

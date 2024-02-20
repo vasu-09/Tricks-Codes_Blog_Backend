@@ -19,7 +19,7 @@ import com.tandc.blog.service.CommentService;
 
 import jakarta.transaction.Transactional;
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @Controller
 @RequestMapping("comments")
 @Transactional

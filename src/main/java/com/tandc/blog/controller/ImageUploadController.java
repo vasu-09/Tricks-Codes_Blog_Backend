@@ -32,7 +32,7 @@ import java.awt.image.BufferedImage;
 // Get image width
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 public class ImageUploadController {
 

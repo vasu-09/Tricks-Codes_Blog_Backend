@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.tandc.blog.entity.About;
 import com.tandc.blog.repository.AboutRepository;
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @Controller
 @RequestMapping
 public class AboutController {

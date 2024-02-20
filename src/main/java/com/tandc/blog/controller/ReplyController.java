@@ -18,7 +18,7 @@ import com.tandc.blog.dto.Commentget;
 import com.tandc.blog.service.ReplyService;
 
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/replies")
 public class ReplyController {
